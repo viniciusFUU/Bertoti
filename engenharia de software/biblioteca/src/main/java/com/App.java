@@ -1,5 +1,6 @@
 package com;
 
+import java.sql.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -33,6 +34,15 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+
+        Connection conexao = null;
+        
+        // try {
+            
+        // } catch (SQLException e) {
+        //     // TODO: handle exception
+
+        // }
     }
 
 }
