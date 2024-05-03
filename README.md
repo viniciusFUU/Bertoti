@@ -5,5 +5,5 @@
 <p>1ª atividade - Resumo sobre o que é Engenharia de software segundo o texto lido em aula, definição de tempo e escala relacionado a tecnologia e definição do significado de tradeoff;</p>
 <p>2ª atividade -  Dar três exemplos de tradeoffs;</p>
 <p>3ª atividade - Definições dos tipos de arquitetura de software; </p>
-<p></p>
+<p>4ª atividade - </p>
 <p>5ª atividade - Desenvolver um software.</p>
