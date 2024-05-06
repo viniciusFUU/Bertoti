@@ -12,7 +12,7 @@ public class PlayerWithTeamController {
             bidList.add(new PlayerWithTeam(player, team));
             System.out.println("Jogador adicionado com sucesso!");
         } else if (player == null){
-            System.out.println("Não jogador com este nome.");
+            System.out.println("Não jogador há com este nome.");
         } else {
             System.out.println("Não há time com este nome.");
         }
