@@ -1,69 +1,67 @@
 ## Repositório dedicado à materia de Engenharia de Software do 2º semestre do curso de Banco de Dados da FATEC - São José dos Campos.
 
-- 1ª atividade - Resumo sobre o que é Engenharia de software segundo o texto lido em aula, definição de tempo e escala relacionado a tecnologia e definição do significado de tradeoff;
-- 2ª atividade - Dar três exemplos de tradeoffs;
-- 3ª atividade - Definições dos tipos de arquitetura de software; 
+- 1ª atividade - Comentários do livro SWE at Google;
+- 2ª atividade - Três exemplos de tradeoffs;
+- 3ª atividade - Análise dos requisitos não funcionais e tradeoffs das arquiteturas dos slides 24 à 29; 
 - 4ª atividade - Definição de arquitetura;
-- 5ª atividade - Desenvolver um software;
+- 5ª atividade - Classes UML;
 - 6ª atividade - Código JAVA;
-- 7ª atividade - testes atuomatizados.
+- 7ª atividade - Testes.
 
-## Atividade 1 - Resumo sobre o que é Engenharia de software
+## Atividade 1 - Comentários do livro SWE at Google
 
 Withain Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software : engineering after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomesnsion to programming. Cubes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, mmimaintenance). The addition of time adds an important new dimeension to programming.
 
 We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
 
-### comentários
+#### Comentários
 
-- engenharia de software - programação + tempo, escala e tradeoff.
+- Programação é a parte mais importante da engenharia de software e é como a aplicação será desenvolvida. Porém, o que faz a engenharia de software ser diferente de programação são três pontos cruciais: tempo, escala e tradeoff.
+- Tempo: Como tudo na vida, as coisas evoluem e isso não é diferente com as tecnologias. Se um código não tem manutenção, o tempo vai fazendo com que o software fique ultrapassado, tendo como consequência sua inutilização.
+- Escala: Possibilidade de expandir o software, otimizar.
+- Tradeoff - Avaliar os pontos negativos e positivos, pore na balança e identificar o que é o melhor para o projeto.
 
-- tempo - software e código tem grandes chances da - estrutura piorar ao longo do tempo, o que pode levar o software a ficar inutilizado.
+## Atividade 2 - Três exemplos de tradeoffs
 
-- escala - possibilidade de expandir o software, otimizar.
-
-- tradeoff - jogo de perde ganha. 
-
-## Atividade 2 - Dar três exemplos de tradeoffs
-
-1º Utilizar python para agilizar no processo de desenvolver sistemas em relação ao JAVA. Mas perder velocidade de processamento de máquina;
+1º Utilizar python para ganhar velocidade no desenvolvimento do software em relação ao JAVA, tendo em vista que a tecnologia possui uma sintaxe simples com alta curva de aprendizado. Porém, perder na portabilidade do sistema, já que JAVA pode ser executado em qualquer dispositivo que possua JVM (Java virtual machine);
 
 2º Utilizar MongoDB para facilitar a parte de código para armazenamento de dados em relação ao sgbd da Oracle. Porém, tem uma escalonabilidade menor que o segundo banco de dados mencionado;
 
 3º Utilizar linux para ter uma segurança maior em relação ao windowns. Porém, tem uma interface menos visual que a do sistema da microsoft. 
 
-## Atividade 3 - Definições dos tipos de arquitetura de software
+## Atividade 3 - Análise dos requisitos não funcionais e tradeoffs das arquiteturas dos slides 24 à 29
 
-### ---------- Arquitetura de Camadas ----------
+####  Arquitetura de Camadas 
 
 Este padrão é amplamente utilizado em desenvolvimento de software para criar sistemas modulares, escaláveis e e de fácil manutenção. 
 
-Ela tem uma simplicidade muito grande, o que torna ela mais barata de ser desenvolvida. Porém, por estar tudo n mesmo lugar, faz com que ela tenha uma escalabilidade pequena, o que dificulta o crescimento do sistema.
+Ela tem uma simplicidade muito grande, o que torna ela mais barata de ser desenvolvida. Porém, por estar tudo no mesmo lugar, faz com que ela tenha uma escalabilidade pequena, o que dificulta o crescimento do sistema.
 
-### ---------- Arquitetura pipeline ----------
+####  Arquitetura pipeline 
 
-É uma arquitetura utlizada mas em processamento de dados e computação paralela, onde a velocidade do processamento é crucial.
+É uma arquitetura utilizada mais em processamento de dados e computação paralela, onde a velocidade do processamento é crucial.
 
-Ela, assim como a arquitetura de camadas, é simples, o que a torna barata. Não escala muito bem por fazer uma atividade de cada vez.
+Ela, assim como a arquitetura de camadas, é simples, o que a torna barata. Porém, não escala muito bem por fazer uma atividade de cada vez.
 
-### ---------- Arquitetura microkernel ----------
+####  Arquitetura microkernel 
 
-Utilizado em sistemas operacionais, onde vc tem o núcleo e os plugins, que são as interfaces.
+Utilizado em sistemas operacionais, onde vc tem o núcleo e os plugins, que são as interfaces. Tem um bom custo beneficio. Mas não possui uma boa escalabilidade.
 
-### ---------- Arquitetura baseada em serviços ----------
+####  Arquitetura baseada em serviços 
 
-É um modelo de desenvolvimento de software que cisa criar sistemas distribuídos e capazes de trabalhar com outros sistemas. Ao contrário da simplicidade das arquiteturas de camadas e pipeline, ela oferece uma abordagem mais escalável e flexível.
+É um modelo de desenvolvimento de software que visa criar sistemas distribuídos e capazes de trabalhar com outros sistemas. Ao contrário da simplicidade das arquiteturas de camadas e pipeline, ela oferece uma abordagem mais escalável e flexível, mas perde em custo, sendo mais caro.
 
-### ---------- Arquitetura Orientada a Eventos ----------
+####  Arquitetura Orientada a Eventos 
 
-É um modelo que foca na comunicação entra os componentes do software por meio de eventos. Ao contrário das arquiteturas de camadas e pipeline, a arquitetura orientada a eventos permite que os componentes reajam a eventos assíncronos, o que torna maior a flexibilidade e a escalabilidade.
+É um modelo que foca na comunicação entre os componentes do software por meio de eventos, fazendo com que seu desenvolvimento seja mais complexo. Ao contrário das arquiteturas de camadas e pipeline, a arquitetura orientada a eventos permite que os componentes reajam a eventos assíncronos, o que torna maior a flexibilidade e a escalabilidade.
 
-### ---------- Arquitetura de Microsserviços ----------
+####  Arquitetura de Microsserviços 
 
-É um modelode software que organiza um sistema como um conjunto de serviços independente e autonomos, cada um focado em realizar uma função em especifica. Comparando a arquitetura baseada em serviços, os microsserviços são ainda mais detalhados, visando a modularidade extrema.
+É um modelo de software que organiza um sistema como um conjunto de serviços independente e autonomos, cada um focado em realizar uma função em especifico. Essa arquitetura permite que o sistema tenha uma grande escalabilidade, mas por ter serviços indepententes faz com que o projeto seja algo mais complexo e caro.
 
-## Atividade 4 - Arquitetura de Software selecionada
+## Atividade 4 - Definição de Arquitetura para o Sistema
 
 Optei por desenvolver o sistema com a arquitetura em camadas. Por ter uma composição mais simples, faz sentido um pequeno sistema ser projetado em tal formato. Além de facilitar a reutilização de código e futuramente, escalabilidade do sistema.
 
-![alt text](./engenharia%20de%20software/img/image.png)
+## Atividade 5 - Classes UML
+
