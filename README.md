@@ -65,3 +65,4 @@ Optei por desenvolver o sistema com a arquitetura em camadas. Por ter uma compos
 
 ## Atividade 5 - Classes UML
 
+![alt text](<Captura de tela 2024-05-07 102005.png>)

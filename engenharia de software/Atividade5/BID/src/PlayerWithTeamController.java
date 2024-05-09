@@ -18,6 +18,17 @@ public class PlayerWithTeamController {
         }
     }
 
+    public Player updateTeamPlayer(PlayerController playerP, TeamController teamP, String timeP, String novoTimeP){
+        Player player = playerP.searchPlayer(playerName, lastNome);
+        Team team = teamP.searchTeam(TeamName, TeamCountry);
+
+        if (player != null && team != null){
+            teamP.updateTeamName(timeP, novoTimeP);
+            return team;
+        }
+        return null;
+    }
+
     public void showBid(){
         for (PlayerWithTeam registro : bidList){
             if (bidList.size() != 0){
