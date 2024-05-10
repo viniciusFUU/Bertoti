@@ -22,10 +22,13 @@ public class PlayerWithTeamController {
         Player player = playerP.searchPlayer(playerName, lastNome);
         Team team = teamP.searchTeam(TeamName, TeamCountry);
 
-        if (player != null && team != null){
-            teamP.updateTeamName(timeP, novoTimeP);
-            return team;
+        for (PlayerWithTeam playerTeam : bidList){
+            if (player != null && team != null){
+                teamP.updateTeamName(timeP, novoTimeP);
+                return team;
+            }
         }
+
         return null;
     }
 
