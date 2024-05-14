@@ -64,5 +64,4 @@ Utilizado em sistemas operacionais, onde vc tem o núcleo e os plugins, que são
 Optei por desenvolver o sistema com a arquitetura em camadas. Por ter uma composição mais simples, faz sentido um pequeno sistema ser projetado em tal formato. Além de facilitar a reutilização de código e futuramente, escalabilidade do sistema.
 
 ## Atividade 5 - Classes UML
-
-![alt text](<Captura de tela 2024-05-07 102005.png>)
+![alt text](image.png)
