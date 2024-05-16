@@ -33,7 +33,7 @@ We see three critical differences between programming and software engineering: 
 
 ####  Arquitetura de Camadas 
 
-Este padrão é amplamente utilizado em desenvolvimento de software para criar sistemas modulares, escaláveis e e de fácil manutenção. 
+Este padrão é amplamente utilizado em desenvolvimento de software para criar sistemas modulares e de fácil manutenção. 
 
 Ela tem uma simplicidade muito grande, o que torna ela mais barata de ser desenvolvida. Porém, por estar tudo no mesmo lugar, faz com que ela tenha uma escalabilidade pequena, o que dificulta o crescimento do sistema.
 
