@@ -18,14 +18,15 @@ public class PlayerWithTeamController {
         }
     }
 
-    public Player updateTeamPlayer(PlayerController playerP, TeamController teamP, String timeP, String novoTimeP){
+    public Player updateTeamPlayer(PlayerController playerP, TeamController teamP, String timeAntigo, String novoTimeP, String playerName, String lastNome, String TeamName, String TeamCountry){
         Player player = playerP.searchPlayer(playerName, lastNome);
         Team team = teamP.searchTeam(TeamName, TeamCountry);
 
         for (PlayerWithTeam playerTeam : bidList){
-            if (player != null && team != null){
-                teamP.updateTeamName(timeP, novoTimeP);
-                return team;
+            if (playerTeam.getPlayer().equals(player) && playerTeam.getTeam().getTeamName().equals(timeAntigo)){
+                teamP.updateTeamName(timeAntigo, novoTimeP);
+                playerTeam.setTeam(team);
+                return player;
             }
         }
 

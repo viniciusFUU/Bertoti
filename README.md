@@ -25,7 +25,7 @@ We see three critical differences between programming and software engineering: 
 
 1º Utilizar python para ganhar velocidade no desenvolvimento do software em relação ao JAVA, tendo em vista que a tecnologia possui uma sintaxe simples com alta curva de aprendizado. Porém, perder na portabilidade do sistema, já que JAVA pode ser executado em qualquer dispositivo que possua JVM (Java virtual machine);
 
-2º Utilizar MongoDB para facilitar a parte de código para armazenamento de dados em relação ao sgbd da Oracle. Porém, tem uma escalonabilidade menor que o segundo banco de dados mencionado;
+2º Utilizar MongoDB para facilitar a parte de código para armazenamento de dados em relação ao sgbd da Oracle. Porém, tem uma escalabilidade menor que o segundo banco de dados mencionado;
 
 3º Utilizar linux para ter uma segurança maior em relação ao windowns. Porém, tem uma interface menos visual que a do sistema da microsoft. 
 
