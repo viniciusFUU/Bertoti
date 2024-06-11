@@ -6,7 +6,8 @@
 - 4ª atividade - Definição de arquitetura;
 - 5ª atividade - Classes UML;
 - 6ª atividade - Código JAVA;
-- 7ª atividade - Testes.
+- 7ª atividade - Testes;
+- 8ª atividade - Modelo de Caso de Uso.
 
 ## Atividade 1 - Comentários do livro SWE at Google
 
@@ -72,6 +73,6 @@ Código e teste
 
 ## Atividade 8
 
-UML
+Modelo de Caso de Uso
 
 ![alt text](image-2.png)
