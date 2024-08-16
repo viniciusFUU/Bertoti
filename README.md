@@ -1,4 +1,5 @@
 ## Repositório dedicado à materia de Engenharia de Software do 2º e 3º semestre do curso de Banco de Dados da FATEC - São José dos Campos.
+# 2º Semestre -
 
 - 1ª atividade - Comentários do livro SWE at Google;
 - 2ª atividade - Três exemplos de tradeoffs;
