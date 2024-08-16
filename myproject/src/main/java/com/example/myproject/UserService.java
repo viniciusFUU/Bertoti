@@ -20,6 +20,25 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public User updateUserByName(String name, User userDetails) {
+        List<User> users = userRepository.findAll();
+        User updatedUser = null;
+        
+        for (User usuario : users) {
+            if (name.equals(usuario.getName())) {
+                usuario.setName(userDetails.getName());
+                updatedUser = usuario;
+                break;  
+            }
+        }
+        
+        if (updatedUser != null) {
+            return userRepository.save(updatedUser); 
+        } else {
+            throw new RuntimeException("User not found");
+        }
+    }
+
     public void deleteUserById(Long id){
         if(userRepository.existsById(id)){
             userRepository.deleteById(id);
