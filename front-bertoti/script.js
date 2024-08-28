@@ -5,7 +5,7 @@ function submitForm() {
     const data = {
         name: formData.get('name'),
         age: formData.get('age'),
-        sex: formData.get('gender')
+        gender: formData.get('gender')
     };
 
     fetch('http://localhost:8080/users', {
