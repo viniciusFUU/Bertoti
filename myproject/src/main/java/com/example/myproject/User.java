@@ -14,15 +14,17 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class User {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id")
     private Long id;
 
-    @Column(name = "nome")
+    @Column(name = "user_name")
     private String name;
 
-    @Column(name = "idade")
+    @Column(name = "user_age")
     private Integer age;
     
-    @Column(name = "sexo")
+    @Column(name = "user_gender")
     private String gender;
 }

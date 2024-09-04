@@ -8,7 +8,7 @@ function submitForm() {
         gender: formData.get('gender')
     };
 
-    fetch('http://localhost:8080/users', {
+    fetch('http://localhost:8080/users', { // Ajuste a URL conforme necessário
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -33,7 +33,7 @@ function submitForm() {
 
 // Função para buscar e exibir todos os usuários
 function fetchUsers() {
-    fetch('http://localhost:8080/users')
+    fetch('http://localhost:8080/users') // Ajuste a URL conforme necessário
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
