@@ -14,11 +14,4 @@ public class NotificationService {
     public String toNotify(String channel, String destination, String message){
         return mapStrategy.get(channel).sendNotification(destination, message);
     }
-
-    public static void main(String[] args) {
-        NotificationService not = new NotificationService();
-        String message = not.toNotify("Whatsapp", "Bianca", "Te amo muito meu amor");
-    
-        System.out.println(message);
-    }
 }
