@@ -4,26 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Jogo {
-    private List<Observer> observers = new ArrayList<>();
+    List<Notificacao> registrosNotificacoes = new ArrayList<>();
     private boolean wasGoal = false;
-
-    public boolean getWasGoal() {
-        return wasGoal;
-    }
 
     public void setWasGoal(boolean wasGoal) {
         this.wasGoal = wasGoal;
-        notifyObservers();
+        notificacoes();
     }
 
-    public void gol(Observer observer){
+    public void gol(Notificacao notificacao){
+        registrosNotificacoes.add(notificacao);
         setWasGoal(true);
-        observers.add(observer);
     }
 
-    public void notifyObservers(){
-        for (Observer observer : observers){
-            observer.update();
+    public void notificacoes(){
+        for(Notificacao notificacao : registrosNotificacoes){
+            notificacao.notifica();
         }
     }
 }
