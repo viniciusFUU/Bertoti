@@ -3,8 +3,8 @@ package Observer;
 public class App {
     public static void main(String[] args) {
         Jogo jogo = new Jogo();
-        DiaDeJogo deJogo = new DiaDeJogo(jogo);
+        Gol gol = new Gol(jogo);
 
-        jogo.gol(deJogo);
+        jogo.gol(gol);
     }
 }
