@@ -1,14 +1,14 @@
 package Observer;
 
-public class DiaDeJogo implements Notificacao{
+public class Falta implements Notificacao{
     private Jogo jogo;
 
-    public DiaDeJogo (Jogo jogo){
+    public Falta(Jogo jogo){
         this.jogo = jogo;
     }
 
     @Override
     public void notifica() {
-        System.out.println("Gooooool");
+        System.out.println("Cartão amarelo");
     }
 }
